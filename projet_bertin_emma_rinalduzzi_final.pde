@@ -414,7 +414,7 @@ void draw() {
     text("Rennes", 269, 326);
     text("Bordeaux", 265, 558);
     text("Strasbourg", 680, 221);
-    text("Paris", 400, 221);
+    text("Paris", 450, 221);
     text("Brest", 34, 225);
     text("Nice", 752, 649);
   
