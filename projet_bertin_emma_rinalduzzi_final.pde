@@ -94,9 +94,10 @@ void draw() {
     textAlign(CENTER, CENTER);
     text("Une balade en France", width / 2, height / 2);
     textSize(16);
-    text("bougez la souris sur la France et laissez vous emporter dans sa richesse", width / 2, (height / 2+ 40));
     fill(255,0,255);
-    text("Cliquez pour faire apparaitre les villes", width / 2 , (height / 2+ 65));
+    text("bougez la souris sur la France et laissez vous emporter par sa richesse", width / 2, (height / 2+ 40));
+    fill(255,0,255);
+    //text("Cliquez pour faire apparaitre les villes", width / 2 , (height / 2+ 65));
 
     // Vérifier si la durée de l'introduction est écoulée
     if (millis() > finIntro) {
@@ -403,10 +404,10 @@ void draw() {
 
   
 // place les villes sur l'écran
-  if (texteVisible) {
+  
     fill(0);
     textSize(20);
-    text("Lyon", 570, 490);
+    text("Lyon", 598, 490);
     text("Marseille", 620, 690);
     text("Toulouse", 386, 685);
     text("Lille", 441, 52);
@@ -416,16 +417,16 @@ void draw() {
     text("Paris", 400, 221);
     text("Brest", 34, 225);
     text("Nice", 752, 649);
-  }
-  //println(posX + "/" + posY + "/");
+  
+  println(posX + "/" + posY + "/");
 }
 }
 
 
-void mouseClicked() {
+/*void mouseClicked() {
   texteVisible = !texteVisible; // fait apparaitre et disparaitre le texte en cliquant 
  }
-
+*/
  
 // création d'une classe qui génére des ellipses qui partent dans tous les sens et diminuent en opacité jusqu'à disparaitre
 class EllipseCustomEmma {
